@@ -1,0 +1,82 @@
+{
+    "experienceList": [
+        {
+            "id": 1,
+            "title": "MomTastyRecipe",
+            "logo": "@/assets/images/experience/offeo.jpg",
+            "description":
+              "As a Frontend Developer, collaborate together with art director to develop beautiful UIs & features to give remarkable experience for users. Integrate API from backend to exchange data within database. Contributed to increased SEO & web performance of OFFEO. Apply unit testings across OFFEO sites with Jest. Building scalability by implementing clean & readable code methodology. Develop internal site within fullstack development with Inertia-Vue-Laravel-MySQL.",
+            "skills": [
+              "Vue.js",
+              "Vuex",
+              "Nuxt.js",
+              "REST API",
+              "SEO & Web Performance",
+              "Git (Bitbucket & Github)",
+              "Gitahead",
+              "SCSS/SASS",
+              "UNIX System (Linux)",
+              "Webpack",
+              "Inertia.js",
+              "Laravel",
+              "MYSQL",
+              "Vuetify",
+              "Babel"
+            ]
+        }
+    ],
+    "skillList": [
+        {
+            "id": "1",
+            "title": "HTML",
+            "icon": "HTML",
+            "Level": "Fluent"
+        },
+        {
+            "id": "2",
+            "title": "HTML",
+            "icon": "HTML",
+            "Level": "Fluent"
+        },
+        {
+            "id": "3",
+            "title": "HTML",
+            "icon": "HTML",
+            "Level": "Fluent"
+        }
+    ],
+    "PortfolioList": [
+        {
+            "title": "Asia-Property",
+            "description":
+              "Beautiful & modern real estate website that developed within full-stack development until deployment all by myself, designed purely with SCSS based from ideas i received from themeforest.com & dribbble.com.",
+            "thumbnail": "@/assets/images/works/asia01.png",
+            "year": 2021,
+            "tags": ["ReactJS", "Fullstack"],
+            "website": "https://asiaproperty.netlify.app/",
+            "previews": [
+              "@/assets/images/works/asia01.png",
+              "@/assets/images/works/asia02.png",
+              "@/assets/images/works/asia03.png",
+              "@/assets/images/works/asia04.png",
+              "@/assets/images/works/asia05.png",
+              "@/assets/images/works/asia06.png",
+              "@/assets/images/works/asia07.png",
+              "@/assets/images/works/asia08.png"
+            ],
+            "skills": [
+              "ReactJS",
+              "ReactRedux",
+              "ExpressJS",
+              "MongoDB",
+              "Cookie",
+              "Heroku",
+              "REST API",
+              "SCSS",
+              "Fullstack web development",
+              "Icomoon",
+              "Github"
+            ]
+          }
+    ]
+}

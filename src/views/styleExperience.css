@@ -1,0 +1,126 @@
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 80%;
+  /* height: 50%; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-pagination{
+
+  width: 70%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.swiper-slide-pagination {
+  width:10%;
+  
+  
+  
+  /* Center slide text vertically */
+  
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-logo{
+  width: 30%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.swiper-button-next {
+  position: absolute !important;
+  top: 47%;
+  right: -28px;
+  width: 80px;
+  height: 80px;
+  background: #000;
+  border: 1px solid gray;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 700;
+  outline: 0;
+  transition: background-color .2s ease, color .2s ease;
+  transform: scale(0.3);
+  
+	
+
+			
+
+			/* subtract .swiper-wrapper bottom-margin to vertically center arrow */
+			/* height: calc(100% - 3em); */
+}
+.swiper-button-prev {
+  position: absolute !important;
+  top: 47%;
+  left: -28px;
+  width: 80px;
+  height: 80px;
+  background: #000;
+  border: 1px solid gray;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 700;
+  outline: 0;
+  transition: background-color .2s ease, color .2s ease;
+  transform: scale(0.3)
+}
+
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  /* margin: 0 2px !important; */
+  border-radius: 2px;
+  background-color: #6f7375;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  width: 96px; 
+  opacity: 1;
+}
+.swiper-pagination-image{
+  width: 125px;
+  height: 125px;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .swiper-logo{
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-pagination-image{
+    width: 75px;
+    height: 75px;
+  }
+}
