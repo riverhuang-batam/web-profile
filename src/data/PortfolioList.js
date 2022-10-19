@@ -41,7 +41,7 @@ const PortfolioList = [
           "testing3",
         thumbnail: "PortfolioImages/momTastyRecipe.png",
         year: 2021,
-        tags: ["ReactJS", "Fullstack"],
+        tags: ["ReactJS", "Fullstack", "Back-End"],
         website: "https://asiaproperty.netlify.app/",
         previews: [
           "@/assets/images/works/asia01.png",
@@ -143,7 +143,7 @@ const PortfolioList = [
           "testing4",
         thumbnail: "PortfolioImages/githubJobSearch.png",
         year: 2021,
-        tags: ["ReactJS", "Fullstack"],
+        tags: ["ReactJS", "Fullstack", "Back-End"],
         website: "PortfolioImages/githubJobSearch.png",
         previews: [
           "@/assets/images/works/asia01.png",
@@ -174,7 +174,7 @@ const PortfolioList = [
         slideNumber: 6,
         title: "Covid Tracker",
         description:
-          "testing4",
+          "testing6",
         thumbnail: "PortfolioImages/crwn-clothing.png",
         year: 2021,
         tags: ["Back-End", "Fullstack"],
