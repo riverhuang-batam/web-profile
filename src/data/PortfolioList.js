@@ -36,22 +36,15 @@ const PortfolioList = [
       {
         id: 2,
         slideNumber: 2,
-        title: "Asia-Property",
+        title: "MomTr",
         description:
-          "testing3",
+          "website that have a list of food recipe created using ReactJS getting api from ",
         thumbnail: "PortfolioImages/momTastyRecipe.png",
         year: 2021,
-        tags: ["ReactJS", "Fullstack", "Back-End"],
-        website: "https://asiaproperty.netlify.app/",
+        tags: ["ReactJS"],
+        website: "https://momtr.netlify.app/",
         previews: [
-          "@/assets/images/works/asia01.png",
-          "@/assets/images/works/asia02.png",
-          "@/assets/images/works/asia03.png",
-          "@/assets/images/works/asia04.png",
-          "@/assets/images/works/asia05.png",
-          "@/assets/images/works/asia06.png",
-          "@/assets/images/works/asia07.png",
-          "@/assets/images/works/asia08.png"
+          "PortfolioImages/momTastyRecipe.png",
         ],
         skills: [
           "Thunder",
@@ -72,33 +65,16 @@ const PortfolioList = [
         slideNumber: 3,
         title: "Covid Tracker",
         description:
-          "testing4",
+          "website that show statistic of covid",
         thumbnail: "PortfolioImages/covidTracker.png",
-        year: 2021,
-        tags: ["ReactJS", "Fullstack"],
+        year: 2020,
+        tags: ["ReactJS"],
         website: "PortfolioImages/covidTraker.png",
         previews: [
-          "@/assets/images/works/asia01.png",
-          "@/assets/images/works/asia02.png",
-          "@/assets/images/works/asia03.png",
-          "@/assets/images/works/asia04.png",
-          "@/assets/images/works/asia05.png",
-          "@/assets/images/works/asia06.png",
-          "@/assets/images/works/asia07.png",
-          "@/assets/images/works/asia08.png"
+          "PortfolioImages/covidTraker.png",
         ],
         skills: [
           "ReactJS",
-          "ReactRedux",
-          "ExpressJS",
-          "MongoDB",
-          "Cookie",
-          "Heroku",
-          "REST API",
-          "SCSS",
-          "Fullstack web development",
-          "Icomoon",
-          "Github"
         ]
       },
       {
@@ -106,7 +82,7 @@ const PortfolioList = [
         slideNumber: 4,
         title: "Covid Tracker",
         description:
-          "testing4",
+          "website that have a list of food recipe created using ReactJS getting api from",
         thumbnail: "PortfolioImages/lyricFinder.png",
         year: 2021,
         tags: ["ReactJS", "Fullstack"],
@@ -174,33 +150,16 @@ const PortfolioList = [
         slideNumber: 6,
         title: "Covid Tracker",
         description:
-          "testing6",
-        thumbnail: "PortfolioImages/crwn-clothing.png",
+          "web design using japan as the theme",
+        thumbnail: "PortfolioImages/figma.png",
         year: 2021,
-        tags: ["Back-End", "Fullstack"],
-        website: "PortfolioImages/crwn-clothing.png",
+        tags: ["Web Design"],
+        website: "https://www.figma.com/file/qSqnZn3wMFULWfRI8gsKQJ/Untitled?node-id=0%3A1",
         previews: [
-          "@/assets/images/works/asia01.png",
-          "@/assets/images/works/asia02.png",
-          "@/assets/images/works/asia03.png",
-          "@/assets/images/works/asia04.png",
-          "@/assets/images/works/asia05.png",
-          "@/assets/images/works/asia06.png",
-          "@/assets/images/works/asia07.png",
-          "@/assets/images/works/asia08.png"
+          "PortfolioImages/figma.png",
         ],
         skills: [
-          "ReactJS",
-          "ReactRedux",
-          "ExpressJS",
-          "MongoDB",
-          "Cookie",
-          "Heroku",
-          "REST API",
-          "SCSS",
-          "Fullstack web development",
-          "Icomoon",
-          "Github"
+          "Figma",
         ]
       }
 ]

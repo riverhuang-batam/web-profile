@@ -4,8 +4,17 @@
     <h1 class="text-center text-3xl font-bold mb-4">
       {{ this.portfolioModalValue.title }}
     </h1>
-    <div class="mx-auto grid grid-cols-1 sm:grid-cols-2">
-      <div>
+
+    <!--<div class="mx-auto grid grid-cols-12 sm:grid-cols-2">-->
+    <div class="mx-auto grid grid-cols-20 gap-2">
+      <div class="flex align-middle">
+        <CIcon
+          @click="prev(portfolioModalValue)"
+          :icon="icon.cilArrowLeft"
+          class="mx-auto col-start-1 inset-y-0 left-0 w-6 top-20 left-20 m-0"
+        />
+      </div>
+      <div class="col-start-2 col-end-10">
         <img
           width="1000"
           height="1000"
@@ -13,63 +22,48 @@
           alt=""
         />
       </div>
-      <div>
-        {{ this.portfolioModalValue.year }}
-        <p>{{ portfolioModalValue.description }}</p>
-        <span
-          class="
-            text-xs
-            mr-2
-            mb-2
-            inline-block
-            py-1
-            px-2.5
-            leading-none
-            text-center
-            whitespace-nowrap
-            align-baseline
-            font-bold
-            bg-yellow-600
-            text-white
-            rounded-full
-          "
-          v-for="skill in portfolioModalValue.skills"
-          :key="skill.id"
-        >
-          {{ skill }}
+      <div class="col-start-11 col-span-9">
+        <p class="text-xl text-center">
+          created on {{ this.portfolioModalValue.year }}
+        </p>
+        <p class="mt-2 mb-2 text-xl">{{ portfolioModalValue.description }}</p>
+        <span class="inline-block">
+          <CIcon :icon="icon.cilLibrary" class="w-6" />
         </span>
+        <span class="inline-block">
+          <p class="text-xl">Tech:</p>
+        </span>
+        <div>
+          <span
+            class="text-xs mr-2 mb-2 inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-600 text-white rounded-full"
+            v-for="skill in portfolioModalValue.skills"
+            :key="skill.id"
+          >
+            {{ skill }}
+          </span>
+        </div>
+      </div>
+      <div class="flex align-middle">
+        <CIcon
+          @click="next(portfolioModalValue)"
+          :icon="icon.cilArrowRight"
+          class="mx-auto col-end-21 fill-secondary w-6"
+        />
       </div>
     </div>
-    <button @click="prev(portfolioModalValue)">left</button>
-    <button @click="next(portfolioModalValue)">right</button>
+
+    <div class="flex justify-end">
+      <Button class="bg-blue-500 hover:bg-blue-400 text-white py-2 px-4">
+        <p class="text-2xl">Link ^w^</p>
+      </Button>
+    </div>
   </Modal>
   <h1 class="font-bold text-3xl text-center">Portfolio</h1>
-
-  <button @click="filterPortfolio()">test</button>
-
-  <div class="relative inline-block text-left dropdown">
+  <div class="container mx-auto">
+<div class="relative inline-block text-left dropdown ">
     <span class="rounded-md shadow-sm"
       ><button
-        class="
-          inline-flex
-          justify-center
-          w-full
-          px-4
-          py-2
-          text-sm
-          font-medium
-          leading-5
-          text-gray-700
-          transition
-          duration-150
-          ease-in-out
-          bg-white
-          border border-gray-300
-          rounded-md
-          hover:text-gray-500
-          focus:outline-none focus:border-blue-300 focus:shadow-outline-blue
-          active:bg-gray-50 active:text-gray-800
-        "
+        class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
         @click="show = !show"
         type="button"
         aria-haspopup="true"
@@ -87,32 +81,10 @@
     ></span>
     <div
       v-show="show"
-      class="
-        opacity-0
-        invisible
-        dropdown-menu
-        transition-all
-        duration-300
-        transform
-        origin-top-right
-        -translate-y-2
-        scale-95
-      "
+      class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95"
     >
       <div
-        class="
-          absolute
-          left-0
-          w-56
-          mt-2
-          origin-top-right
-          bg-white
-          border border-gray-200
-          divide-y divide-gray-100
-          rounded-md
-          shadow-lg
-          outline-none
-        "
+        class="absolute left-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
         aria-labelledby="headlessui-menu-button-1"
         id="headlessui-menu-items-117"
         role="menu"
@@ -122,35 +94,24 @@
             v-for="(portfolioTags, index) in portfolioKeyword"
             :key="index"
             :tabindex="index"
-            class="
-              text-gray-700
-              flex
-              justify-between
-              w-full
-              px-4
-              py-2
-              text-sm
-              leading-5
-              text-left
-            "
+            class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
             role="menuitem"
             @click="() => (this.chosenKeyword = portfolioTags)"
           >
             {{ portfolioTags }}
           </a>
         </div>
-        <!-- <div class="py-1">
-          <a href="javascript:void(0)" tabindex="3" class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"  role="menuitem" >Sign out</a>
-          </div> -->
+        
       </div>
     </div>
   </div>
-
+  </div>
   <div class="container mx-auto px-6 py-8 grid sm:grid-cols-3 grid-cols-1">
+  
     <div
       v-for="portfolio in filterPortfolioData"
       :key="portfolio.id"
-      class="max-w-sm rounded overflow-hidden shadow-lg mt-4 mb-4"
+      class="max-w-sm rounded overflow-hidden shadow-lg mt-4 mb-4 flex flex-col"
       @click="showModal(portfolio)"
     >
       <img
@@ -164,8 +125,14 @@
           {{ portfolio.description }}
         </p>
       </div>
-      <div class="px-6 pt-4 pb-2">
+      <!-- <div class="px-6 pt-4 pb-2"> -->
         <!-- <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" v-for="tag in portfolio.tags">{{tag}}</span> -->
+      <!-- </div> -->
+      
+      <div class="px-4 pt-8 pb-4 text-right mt-auto">
+        <Button class="bg-blue-500 hover:bg-blue-400 text-white">
+          <p class="text-xl">See More</p>
+        </Button>
       </div>
     </div>
   </div>
@@ -174,6 +141,7 @@
 import PortfolioList from "@/data/PortfolioList.js";
 import Card from "../components/Card.vue";
 import Modal from "../components/Modal.vue";
+import Button from "../components/Button.vue";
 import { CIcon } from "@coreui/icons-vue";
 import * as icon from "@coreui/icons";
 
@@ -194,6 +162,7 @@ export default {
     Swiper,
     SwiperSlide,
     Modal,
+    Button,
   },
   data() {
     return {

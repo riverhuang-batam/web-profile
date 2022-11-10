@@ -1,33 +1,109 @@
 <template>
-<h1 class="font-bold text-3xl text-center">
-About Me
-</h1>
-  <div class="container
-          px-6
-          py-8
-          mx-auto
-          grid 
-          grid-cols-1
-          sm:grid-cols-2
-          gap-4
-          ">
-          <div class="">
-  <img src="images/image1.png" alt="" srcset="">
-  </div>
-          <div class="">
-    <h1 class="font-bold text-5xl ">
-      HOLA!!
-    </h1>
-    <p>
-      A Junior Full-Stack Developer who focus on building an app that meet the user requirement using javascript  especially react for front-end and nodejs for back-end development
-    </p>
+  <h1 class="font-bold text-3xl text-center">About Me</h1>
+  <div
+    class="container px-6 py-8 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4"
+  >
+    <div class="">
+      <img src="images/image1.png" alt="" srcset="" />
     </div>
-    
+    <div class="">
+      <h1 class="font-bold text-5xl">HOLA!!</h1>
+      <p class="text-xl mt-4">
+        A Junior Full-Stack Developer who focus on building an app that meet the
+        user requirement using javascript especially react for front-end and
+        nodejs for back-end development
+      </p>
+
+      <div class="grid grid-cols-6 divide-x-2">
+        <div class="flex align-middle">
+          <span class="inline-block">
+            <CIcon :icon="icon.cibGmail" class="w-6" />
+          </span>
+          <span class="inline-block ml-4">
+            <p class="text-xl">E-mail</p>
+          </span>
+        </div>
+        <div class="flex align-middle">
+          <p class="text-xl text-center">:</p>
+        </div>
+        <div>
+          <p class="text-xl">riverhuang011@gmail.com</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-6 divide-x-2">
+        <div class="flex align-middle">
+          <span class="inline-block">
+            <CIcon :icon="icon.cilPhone" class="w-6" />
+          </span>
+          <span class="inline-block ml-4">
+            <p class="text-xl">Phone</p>
+          </span>
+        </div>
+        <div class="flex align-middle">
+          <p class="text-xl text-center">:</p>
+        </div>
+        <div>
+          <p class="text-xl whitespace-nowrap">0896-1815-5369</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-6 divide-x">
+        <div>
+          <span class="inline-block">
+            <CIcon :icon="icon.cibGithub" class="w-6" />
+          </span>
+          <span class="inline-block ml-4">
+            <p class="text-xl">Github</p>
+          </span>
+        </div>
+        <div class="flex align-middle">
+          <p class="text-xl text-center">:</p>
+        </div>
+        <div>
+          <p class="text-xl whitespace-nowrap">riverhuang-batam</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-6 divide-x-2">
+        <div>
+          <span class="inline-block">
+            <CIcon :icon="icon.cibLinkedin" class="w-6" />
+          </span>
+          <span class="inline-block ml-4">
+            <p class="text-xl">Linkedin</p>
+          </span>
+        </div>
+        <div class="flex align-middle">
+          <p class="text-xl text-center">:</p>
+        </div>
+        <div>
+          <p class="text-xl">River Huang</p>
+        </div>
+      </div>
+
+      <p class="text-2xl">Hobbies</p>
+      <div class="grid grid-cols-6 divide-x-2">
+        <div>
+          <span class="inline-block">
+            <CIcon :icon="icon.cilGamepad" class="w-6" />
+          </span>
+          <span class="inline-block">
+            <p>Play Games</p>
+          </span>
+        </div>
+        <div>
+          <span class="inline-block">
+            <CIcon :icon="icon.cilMusicNote" class="w-6" />
+          </span>
+          <span class="inline-block">
+            <p>Listen Music</p>
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
-  
 </template>
 <script>
-import PortfolioList from '@/data/PortfolioList.js'
+import PortfolioList from "@/data/PortfolioList.js";
 
 import Card from "../components/Card.vue";
 import { CIcon } from "@coreui/icons-vue";
@@ -50,10 +126,10 @@ export default {
     Swiper,
     SwiperSlide,
   },
-  data(){
-    return{
+  data() {
+    return {
       PortfolioList: PortfolioList,
-    }
+    };
   },
   setup() {
     return {

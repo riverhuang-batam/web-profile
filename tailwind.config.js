@@ -19,6 +19,10 @@ module.exports = {
         'veryPaleRed': 'hsl(13, 100%, 96%)',
         'veryLightGray': 'hsl(0, 0%, 98%)',
       },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        '20': 'repeat(20, minmax(0, 3fr))',
+      }
     },
   },
   plugins: [],
