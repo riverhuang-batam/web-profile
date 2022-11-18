@@ -80,12 +80,12 @@ const PortfolioList = [
       {
         id: 4,
         slideNumber: 4,
-        title: "Covid Tracker",
+        title: "Covid Tracker 4",
         description:
           "website that have a list of food recipe created using ReactJS getting api from",
         thumbnail: "PortfolioImages/lyricFinder.png",
         year: 2021,
-        tags: ["ReactJS", "Fullstack"],
+        tags: [ "Fullstack"],
         website: "PortfolioImages/lyricFinder.png",
         previews: [
           "@/assets/images/works/asia01.png",
@@ -114,7 +114,7 @@ const PortfolioList = [
       {
         id: 5,
         slideNumber: 5,
-        title: "Covid Tracker",
+        title: "Covid Tracker 5",
         description:
           "testing4",
         thumbnail: "PortfolioImages/githubJobSearch.png",
@@ -148,7 +148,7 @@ const PortfolioList = [
       {
         id: 6,
         slideNumber: 6,
-        title: "Covid Tracker",
+        title: "Covid Tracker 6",
         description:
           "web design using japan as the theme",
         thumbnail: "PortfolioImages/figma.png",

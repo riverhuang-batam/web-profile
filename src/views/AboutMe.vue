@@ -14,23 +14,23 @@
         nodejs for back-end development
       </p>
 
-      <div class="grid grid-cols-6 divide-x-2">
+      <div class="grid grid-cols-8 divide-x-2 mt-4">
         <div class="flex align-middle">
           <span class="inline-block">
             <CIcon :icon="icon.cibGmail" class="w-6" />
           </span>
           <span class="inline-block ml-4">
-            <p class="text-xl">E-mail</p>
+            <p class="text-xl whitespace-nowrap">E-mail</p>
           </span>
         </div>
-        <div class="flex align-middle">
-          <p class="text-xl text-center">:</p>
+        <div>
+          <p class="text-xl text-center ">:</p>
         </div>
         <div>
           <p class="text-xl">riverhuang011@gmail.com</p>
         </div>
       </div>
-      <div class="grid grid-cols-6 divide-x-2">
+      <div class="grid grid-cols-8 divide-x-2 mt-4">
         <div class="flex align-middle">
           <span class="inline-block">
             <CIcon :icon="icon.cilPhone" class="w-6" />
@@ -39,7 +39,7 @@
             <p class="text-xl">Phone</p>
           </span>
         </div>
-        <div class="flex align-middle">
+        <div>
           <p class="text-xl text-center">:</p>
         </div>
         <div>
@@ -47,8 +47,8 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-6 divide-x">
-        <div>
+      <div class="grid grid-cols-8 divide-x mt-4">
+        <div class="whitespace-nowrap">
           <span class="inline-block">
             <CIcon :icon="icon.cibGithub" class="w-6" />
           </span>
@@ -56,38 +56,38 @@
             <p class="text-xl">Github</p>
           </span>
         </div>
-        <div class="flex align-middle">
+        <div>
           <p class="text-xl text-center">:</p>
         </div>
         <div>
           <p class="text-xl whitespace-nowrap">riverhuang-batam</p>
         </div>
       </div>
-      <div class="grid grid-cols-6 divide-x-2">
-        <div>
+      <div class="grid grid-cols-8 divide-x-2 mt-4">
+        <div class="whitespace-nowrap">
           <span class="inline-block">
             <CIcon :icon="icon.cibLinkedin" class="w-6" />
           </span>
           <span class="inline-block ml-4">
-            <p class="text-xl">Linkedin</p>
+            <p class="text-xl whitespace-nowrap">Linkedin</p>
           </span>
         </div>
-        <div class="flex align-middle">
+        <div >
           <p class="text-xl text-center">:</p>
         </div>
-        <div>
+        <div class="whitespace-nowrap">
           <p class="text-xl">River Huang</p>
         </div>
       </div>
 
-      <p class="text-2xl">Hobbies</p>
-      <div class="grid grid-cols-6 divide-x-2">
+      <p class="text-2xl mt-4">Hobbies</p>
+      <div class="grid grid-cols-4 divide-x-2 mt-2">
         <div>
           <span class="inline-block">
             <CIcon :icon="icon.cilGamepad" class="w-6" />
           </span>
           <span class="inline-block">
-            <p>Play Games</p>
+            <p class="ml-2 text-xl">Play Games</p>
           </span>
         </div>
         <div>
@@ -95,7 +95,7 @@
             <CIcon :icon="icon.cilMusicNote" class="w-6" />
           </span>
           <span class="inline-block">
-            <p>Listen Music</p>
+            <p class="ml-2 text-xl">Listen Music</p>
           </span>
         </div>
       </div>

@@ -5,7 +5,7 @@
       <div class="col-start-2 col-end-7 flex justify-center">
         <img src="images/image2.png" alt="" srcset="" />
       </div>
-      <div class="col-end-7 col-start-12">
+      <div class="col-end-7 col-start-12 ">
         <form @submit.prevent="sendEmail">
           <div class="mb-6">
             <label for="username" class="block mb-2 text-sm font-medium">Your name</label>
@@ -51,7 +51,9 @@
           </div>
           <!-- <button type="button" value="Send">Submit</button> -->
           <div class="flex justify-end mt-4">
-            <Button type="submit" value="Send">Send</Button>
+            <Button class="text-xl" type="submit" value="Send">
+            Send
+            </Button>
           </div>
         </form>
       </div>
