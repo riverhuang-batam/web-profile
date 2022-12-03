@@ -58,16 +58,22 @@
             md:mt-0
           "
         >
-          <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
+          <li class="text-sm font-bold text-gray-800 hover:text-blue-400 cursor-pointer">
             Home
           </li>
-          <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
-            About
+          <li class="text-sm font-bold text-gray-800 hover:text-blue-400 cursor-pointer">
+            Experience
           </li>
-          <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
-            Blogs
+          <li class="text-sm font-bold text-gray-800 hover:text-blue-400 cursor-pointer">
+            Skills
           </li>
-          <li class="text-sm font-bold text-gray-800 hover:text-blue-400">
+          <li class="text-sm font-bold text-gray-800 hover:text-blue-400 cursor-pointer">
+            Portfolio
+          </li>
+          <li class="text-sm font-bold text-gray-800 hover:text-blue-400 cursor-pointer">
+            About Me
+          </li>
+          <li class="text-sm font-bold text-gray-800 hover:text-blue-400 cursor-pointer">
             Contact Me
           </li>
         </ul>

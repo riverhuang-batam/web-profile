@@ -25,6 +25,10 @@ module.exports = {
         '20': 'repeat(20, minmax(0, 3fr))',
       }
     },
+    fontFamily: {
+      sans: ['Montserrat', 'sans-serif'],
+      heading: ['Poppins', 'sans-serif']
+    }
   },
   plugins: [],
 }

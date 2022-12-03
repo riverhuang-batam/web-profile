@@ -26,7 +26,7 @@
         <!-- <p class="text-xl text-center">
           created on {{ this.portfolioModalValue.year }}
         </p> -->
-        <p class="mt-2 mb-2 text-xl">{{ portfolioModalValue.description }}</p>
+        <p class="mt-2 mb-2 text-xl body-font font-sans">{{ portfolioModalValue.description }}</p>
         <span class="inline-block">
           <CIcon :icon="icon.cilLibrary" class="w-6" />
         </span>
@@ -53,14 +53,14 @@
     </div>
 
     <div class="flex justify-end">
-      <Button>
+      <Button class="bg-primary hover:bg-blue-400 text-white mt-4 ">
         <p class="text-2xl">Open Website</p>
       </Button>
     </div>
   </Modal>
   <h1 class="font-bold text-3xl text-center">Portfolio</h1>
   <div class="container mx-auto">
-    <div class="relative inline-block text-left dropdown">
+    <div class="relative inline-block text-left dropdown ">
       <span class="rounded-md shadow-sm"
         ><button
           class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
@@ -70,7 +70,7 @@
           aria-expanded="true"
           aria-controls="headlessui-menu-items-117"
         >
-          <span>{{ filterDropdown() }}</span>
+          <span class="">{{ filterDropdown() }}</span>
           <svg
             class="w-5 h-5 ml-2 -mr-1"
             viewBox="0 0 20 20"
@@ -98,7 +98,7 @@
               v-for="(portfolioTags, index) in portfolioKeyword"
               :key="index"
               :tabindex="index"
-              class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+              class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left cursor-pointer"
               role="menuitem"
               @click="() => (this.chosenKeyword = portfolioTags)"
             >
@@ -113,17 +113,18 @@
     <div
       v-for="portfolio in filterPortfolioData"
       :key="portfolio.id"
-      class="max-w-sm rounded overflow-hidden shadow-lg mt-4 mb-4 flex flex-col"
+      class="max-w-sm rounded overflow-hidden bg-white shadow-lg mt-4 mb-4 flex flex-col"
       @click="showModal(portfolio)"
     >
       <img
-        class="w-full"
+        class="w-full h-56"
         :src="portfolio.thumbnail"
-        alt="Sunset in the mountains"
+        :alt="portfolio.thumbnail"
       />
+      
       <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">{{ portfolio.title }}</div>
-        <p class="text-gray-700 text-base">
+        <div class="font-bold text-xl mb-2 ">{{ portfolio.title }}</div>
+        <p class="text-gray-700 text-base body-font font-sans text-justify tracking-normal">
           {{ portfolio.description }}
         </p>
       </div>
@@ -243,13 +244,10 @@ export default {
       if (this.chosenKeyword && this.chosenKeyword !== "All") {
         console.log("if working");
         filteredData.map((x, index) => {
-          console.log("filter working", filteredData.length, filteredData);
-          console.log(filteredData.length, index);
           if (x.id === value.id && filteredData.length > index + 1) {
             console.log("it change =====");
             return (this.portfolioModalValue = filteredData[index + 1]);
           }
-          console.log("return the same value");
           return;
         });
       } else {
@@ -267,7 +265,6 @@ export default {
       );
       if (this.chosenKeyword && this.chosenKeyword !== "All") {
         filteredData.map((x, index) => {
-          console.log(filteredData.length, index);
           if (x.id === value.id && index > 0) {
             return (this.portfolioModalValue = filteredData[index - 1]);
           }

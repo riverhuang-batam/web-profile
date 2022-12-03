@@ -21,7 +21,7 @@ const ExperienceList = [
         title: "Bootcamp Impact Byte",
         logo: "logo/impactbytelogo.png",
         description:
-          "Learn as Full stack Developer mostly about javascript. for front-end learned Html, CSs, javascript, React, React Native and Redux. for Back End learned nodejs, express, mongodb, sql.",
+          "Learn to become Full stack Developer. for front-end learned Html, CSs, javascript, React, React Native and Redux. for Back End learned nodejs, express, mongodb, sql.",
         skills: [
           "HTML",
           "CSS",
@@ -59,9 +59,9 @@ const ExperienceList = [
     {
         id: 4,
         title: "Self Taught",
-        logo: "logo/kaddra.png",
+        logo: "logo/coding.png",
         description:
-          "Self Taught programmer learning by watching tutorial from youtube or tutorial and follow building project, also create own mini project",
+          "learning by watching tutorial from youtube or udemy and follow building project, also create own mini project",
         skills: [
           "HTML",
           "CSS",

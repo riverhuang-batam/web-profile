@@ -8,26 +8,28 @@
     </div>
     <div class="">
       <h1 class="font-bold text-5xl">HOLA!!</h1>
-      <p class="text-xl mt-4">
+      <p class="text-xl mt-4 body-font font-sans">
         A Junior Full-Stack Developer who focus on building an app that meet the
         user requirement using javascript especially react for front-end and
         nodejs for back-end development
       </p>
-
+<p class="text-xl mt-4 body-font font-sans">
+        take my time everyday coding while listening music, some free time i playing Games and listening music
+      </p>
       <div class="grid grid-cols-8 divide-x-2 mt-4">
         <div class="flex align-middle">
           <span class="inline-block">
             <CIcon :icon="icon.cibGmail" class="w-6" />
           </span>
-          <span class="inline-block ml-4">
-            <p class="text-xl whitespace-nowrap">E-mail</p>
+          <span class="inline-block ml-4 ">
+            <p class="text-xl whitespace-nowrap body-font font-sans">E-mail</p>
           </span>
         </div>
         <div>
           <p class="text-xl text-center ">:</p>
         </div>
         <div>
-          <p class="text-xl">riverhuang011@gmail.com</p>
+          <p class="text-xl body-font font-sans">riverhuang011@gmail.com</p>
         </div>
       </div>
       <div class="grid grid-cols-8 divide-x-2 mt-4">
@@ -36,14 +38,14 @@
             <CIcon :icon="icon.cilPhone" class="w-6" />
           </span>
           <span class="inline-block ml-4">
-            <p class="text-xl">Phone</p>
+            <p class="text-xl body-font font-sans">Phone</p>
           </span>
         </div>
         <div>
           <p class="text-xl text-center">:</p>
         </div>
         <div>
-          <p class="text-xl whitespace-nowrap">0896-1815-5369</p>
+          <p class="text-xl whitespace-nowrap body-font font-sans">0896-1815-5369</p>
         </div>
       </div>
 
@@ -53,14 +55,14 @@
             <CIcon :icon="icon.cibGithub" class="w-6" />
           </span>
           <span class="inline-block ml-4">
-            <p class="text-xl">Github</p>
+            <p class="text-xl body-font font-sans">Github</p>
           </span>
         </div>
         <div>
           <p class="text-xl text-center">:</p>
         </div>
         <div>
-          <p class="text-xl whitespace-nowrap">riverhuang-batam</p>
+          <p class="text-xl whitespace-nowrap body-font font-sans">riverhuang-batam</p>
         </div>
       </div>
       <div class="grid grid-cols-8 divide-x-2 mt-4">
@@ -69,14 +71,14 @@
             <CIcon :icon="icon.cibLinkedin" class="w-6" />
           </span>
           <span class="inline-block ml-4">
-            <p class="text-xl whitespace-nowrap">Linkedin</p>
+            <p class="text-xl whitespace-nowrap body-font font-sans">Linkedin</p>
           </span>
         </div>
         <div >
           <p class="text-xl text-center">:</p>
         </div>
         <div class="whitespace-nowrap">
-          <p class="text-xl">River Huang</p>
+          <p class="text-xl body-font font-sans">River Huang</p>
         </div>
       </div>
 
@@ -87,7 +89,7 @@
             <CIcon :icon="icon.cilGamepad" class="w-6" />
           </span>
           <span class="inline-block">
-            <p class="ml-2 text-xl">Play Games</p>
+            <p class="ml-2 text-xl body-font font-sans">Play Games</p>
           </span>
         </div>
         <div>
@@ -95,7 +97,7 @@
             <CIcon :icon="icon.cilMusicNote" class="w-6" />
           </span>
           <span class="inline-block">
-            <p class="ml-2 text-xl">Listen Music</p>
+            <p class="ml-2 text-xl body-font font-sans">Listen Music</p>
           </span>
         </div>
       </div>
