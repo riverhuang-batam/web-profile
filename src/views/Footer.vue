@@ -1,11 +1,11 @@
 <template>
   <div class="">
     <h1 class="font-bold text-3xl text-center">Contact Me</h1>
-    <div class="grid grid-cols-12 gap-2 px-8 py-5">
-      <div class="col-start-2 col-end-7 flex justify-center">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-2 px-8 py-5">
+      <div class="lg:col-start-2 lg:col-end-7 flex justify-center">
         <img src="images/image2.png" alt="" srcset="" />
       </div>
-      <div class="col-end-7 col-start-11 mt-10 ">
+      <div class="lg:col-end-7 lg:col-start-11 mt-10 ">
         <form @submit.prevent="sendEmail">
           <div class="mb-6">
             <label for="username" class="block mb-2 text-sm font-medium body-font font-sans">Your name</label>

@@ -109,7 +109,7 @@
       </div>
     </div>
   </div>
-  <div class="container mx-auto px-6 py-8 grid sm:grid-cols-3 grid-cols-1">
+  <div class="container mx-auto px-6 py-8 grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1">
     <div
       v-for="portfolio in filterPortfolioData"
       :key="portfolio.id"
