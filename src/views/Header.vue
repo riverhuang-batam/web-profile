@@ -19,12 +19,12 @@
       A Junior Full-Stack Developer who focus on building an app that meet the user requirement using javascript  especially react for front-end and nodejs for back-end development
     </p>
     <Button class="bg-primary hover:bg-blue-400 text-white mt-6 py-[15px] " >
-      <a href="/images/MyResume.png" download="MyResume.png" class="text-xl font-semibold mx-4  height">Download CV</a>
+      <a href="images/MyResume.png" download="MyResume.png" class="text-xl font-semibold mx-4  height">Download CV</a>
     </Button>
     
     </div>
     <div class="flex mx-auto">
-  <img src="/images/image1.png" alt="" srcset="">
+  <img src="images/image1.png" alt="" srcset="">
   </div>
   </div>
 </template>
