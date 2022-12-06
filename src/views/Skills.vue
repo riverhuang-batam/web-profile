@@ -95,7 +95,11 @@ export default {
       icon,
       swiperOptions: {
         breakpoints: {
-          320: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 1,
+          },
+          480: {
             slidesPerView: 2,
             spaceBetween: 2,
           },

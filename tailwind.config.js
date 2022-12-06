@@ -7,8 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#6FDFE7',
-        'secondary': '#03A2D4',
+        'primary': '#00A3FF',
+        'secondary': '#00A3FF',
+        // 'secondary': '#00C2FF',
         'bgprimary': '#E2F6FF',
         'brightRed': 'hsl(12, 88%, 59%)',
         'brightRedLight': 'hsl(12, 88%, 69%)',
@@ -19,7 +20,15 @@ module.exports = {
         'veryPaleRed': 'hsl(13, 100%, 96%)',
         'veryLightGray': 'hsl(0, 0%, 98%)',
       },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        '20': 'repeat(20, minmax(0, 3fr))',
+      }
     },
+    fontFamily: {
+      sans: ['Montserrat', 'sans-serif'],
+      heading: ['Poppins', 'sans-serif']
+    }
   },
   plugins: [],
 }

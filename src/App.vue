@@ -1,5 +1,5 @@
 <template>
-<div class="bg-bgprimary mb-12">
+<div class="bg-bgprimary mb-12 h-3/5 md:h-3/5 sm:h-full">
   <Navbar />
   <Header />
   </div>

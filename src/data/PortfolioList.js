@@ -4,20 +4,13 @@ const PortfolioList = [
       slideNumber: 1,
         title: "2020 Personal Website",
         description:
-          "TEsting",
-        thumbnail: "PortfolioImages/crwn-clothing.png",
+          "This is my 2020 portfolio website created using ReactJS, it contains my skills and some old portfolio",
+        thumbnail: "PortfolioImages/2020_portfolio.png",
         year: 2020,
         tags: ["ReactJS", "Front-End"],
         website: "https://riverhuang.netlify.app/",
         previews: [
-          "@/assets/images/works/hotelportfoliodesign.png",
-          "@/assets/images/works/asia02.png",
-          "@/assets/images/works/asia03.png",
-          "@/assets/images/works/asia04.png",
-          "@/assets/images/works/asia05.png",
-          "@/assets/images/works/asia06.png",
-          "@/assets/images/works/asia07.png",
-          "@/assets/images/works/asia08.png"
+          "PortfolioImages/2020_portfolio.png",
         ],
         skills: [
           "Thunder",
@@ -36,22 +29,15 @@ const PortfolioList = [
       {
         id: 2,
         slideNumber: 2,
-        title: "Asia-Property",
+        title: "MomTr",
         description:
-          "testing3",
+          "website that have a list of food recipe created using ReactJS getting api from ",
         thumbnail: "PortfolioImages/momTastyRecipe.png",
         year: 2021,
-        tags: ["ReactJS", "Fullstack", "Back-End"],
-        website: "https://asiaproperty.netlify.app/",
+        tags: ["ReactJS"],
+        website: "https://momtr.netlify.app/",
         previews: [
-          "@/assets/images/works/asia01.png",
-          "@/assets/images/works/asia02.png",
-          "@/assets/images/works/asia03.png",
-          "@/assets/images/works/asia04.png",
-          "@/assets/images/works/asia05.png",
-          "@/assets/images/works/asia06.png",
-          "@/assets/images/works/asia07.png",
-          "@/assets/images/works/asia08.png"
+          "PortfolioImages/momTastyRecipe.png",
         ],
         skills: [
           "Thunder",
@@ -72,88 +58,50 @@ const PortfolioList = [
         slideNumber: 3,
         title: "Covid Tracker",
         description:
-          "testing4",
+          "website that show statistic of covid. this source is from https://covid19.mathdro.id/api. App is created by following javascript mastery",
         thumbnail: "PortfolioImages/covidTracker.png",
-        year: 2021,
-        tags: ["ReactJS", "Fullstack"],
+        year: 2020,
+        tags: ["ReactJS"],
         website: "PortfolioImages/covidTraker.png",
         previews: [
-          "@/assets/images/works/asia01.png",
-          "@/assets/images/works/asia02.png",
-          "@/assets/images/works/asia03.png",
-          "@/assets/images/works/asia04.png",
-          "@/assets/images/works/asia05.png",
-          "@/assets/images/works/asia06.png",
-          "@/assets/images/works/asia07.png",
-          "@/assets/images/works/asia08.png"
+          "PortfolioImages/covidTraker.png",
         ],
         skills: [
           "ReactJS",
-          "ReactRedux",
-          "ExpressJS",
-          "MongoDB",
-          "Cookie",
-          "Heroku",
-          "REST API",
-          "SCSS",
-          "Fullstack web development",
-          "Icomoon",
-          "Github"
+          "API"
         ]
       },
       {
         id: 4,
         slideNumber: 4,
-        title: "Covid Tracker",
+        title: "React Chat Application",
         description:
-          "testing4",
-        thumbnail: "PortfolioImages/lyricFinder.png",
+          "Chat application in form of group using ReactJS and SocketIO",
+        thumbnail: "PortfolioImages/react_chat_application.png",
         year: 2021,
-        tags: ["ReactJS", "Fullstack"],
-        website: "PortfolioImages/lyricFinder.png",
+        tags: ["React"],
+        website: "PortfolioImages/react_chat_application.png",
         previews: [
-          "@/assets/images/works/asia01.png",
-          "@/assets/images/works/asia02.png",
-          "@/assets/images/works/asia03.png",
-          "@/assets/images/works/asia04.png",
-          "@/assets/images/works/asia05.png",
-          "@/assets/images/works/asia06.png",
-          "@/assets/images/works/asia07.png",
-          "@/assets/images/works/asia08.png"
+          "PortfolioImages/react_chat_application.png",
         ],
         skills: [
           "ReactJS",
-          "ReactRedux",
           "ExpressJS",
-          "MongoDB",
-          "Cookie",
-          "Heroku",
-          "REST API",
-          "SCSS",
-          "Fullstack web development",
-          "Icomoon",
           "Github"
         ]
       },
       {
         id: 5,
         slideNumber: 5,
-        title: "Covid Tracker",
+        title: "Todo List Vuex",
         description:
-          "testing4",
-        thumbnail: "PortfolioImages/githubJobSearch.png",
+          "A Todo List created using Vuex with get, create, and delete functionality learn from youtube",
+        thumbnail: "PortfolioImages/todo_vuex.png",
         year: 2021,
-        tags: ["ReactJS", "Fullstack", "Back-End"],
-        website: "PortfolioImages/githubJobSearch.png",
+        tags: ["VueJS", "Javascript", "Vuex"],
+        website: "PortfolioImages/todo_vuex.png",
         previews: [
-          "@/assets/images/works/asia01.png",
-          "@/assets/images/works/asia02.png",
-          "@/assets/images/works/asia03.png",
-          "@/assets/images/works/asia04.png",
-          "@/assets/images/works/asia05.png",
-          "@/assets/images/works/asia06.png",
-          "@/assets/images/works/asia07.png",
-          "@/assets/images/works/asia08.png"
+          "PortfolioImages/todo_vuex.png",
         ],
         skills: [
           "ReactJS",
@@ -172,35 +120,18 @@ const PortfolioList = [
       {
         id: 6,
         slideNumber: 6,
-        title: "Covid Tracker",
+        title: "Japan Web",
         description:
-          "testing6",
-        thumbnail: "PortfolioImages/crwn-clothing.png",
+          "web design using japan as the theme",
+        thumbnail: "PortfolioImages/figma.png",
         year: 2021,
-        tags: ["Back-End", "Fullstack"],
-        website: "PortfolioImages/crwn-clothing.png",
+        tags: ["Web Design"],
+        website: "https://www.figma.com/file/qSqnZn3wMFULWfRI8gsKQJ/Untitled?node-id=0%3A1",
         previews: [
-          "@/assets/images/works/asia01.png",
-          "@/assets/images/works/asia02.png",
-          "@/assets/images/works/asia03.png",
-          "@/assets/images/works/asia04.png",
-          "@/assets/images/works/asia05.png",
-          "@/assets/images/works/asia06.png",
-          "@/assets/images/works/asia07.png",
-          "@/assets/images/works/asia08.png"
+          "PortfolioImages/figma.png",
         ],
         skills: [
-          "ReactJS",
-          "ReactRedux",
-          "ExpressJS",
-          "MongoDB",
-          "Cookie",
-          "Heroku",
-          "REST API",
-          "SCSS",
-          "Fullstack web development",
-          "Icomoon",
-          "Github"
+          "Figma",
         ]
       }
 ]
