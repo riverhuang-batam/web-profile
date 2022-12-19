@@ -1,4 +1,5 @@
 <template>
+<div>
   <Modal :isOpen="isOpen" :showModal="showModal">
     <!-- {{portfolio.description}} {{portfolio.id}} -->
     <h1 class="text-center text-3xl font-bold mb-4">
@@ -11,10 +12,11 @@
         <CIcon
           @click="prev(portfolioModalValue)"
           :icon="icon.cilArrowLeft"
-          class="mx-auto col-start-1 inset-y-0 left-0 w-6 top-20 left-20 m-0"
+          class="mx-auto col-start-1 col-end-4 md:col-start-1 inset-y-0 left-0 w-6 top-20 left-20 m-0"
         />
       </div>
-      <div class="col-start-2 col-end-10">
+
+      <div class="col-start-2 col-end-19">
         <img
           width="1000"
           height="1000"
@@ -22,7 +24,9 @@
           alt=""
         />
       </div>
-      <div class="col-start-11 col-span-9">
+      <div class="
+      col-start-11 col-span-9
+      ">
         <!-- <p class="text-xl text-center">
           created on {{ this.portfolioModalValue.year }}
         </p> -->
@@ -43,6 +47,7 @@
           </span>
         </div>
       </div>
+
       <div class="flex align-middle">
         <CIcon
           @click="next(portfolioModalValue)"
@@ -109,7 +114,7 @@
       </div>
     </div>
   </div>
-  <div class="container mx-auto px-6 py-8 grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1">
+  <div class=" mx-auto px-6 py-8 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 justify-items-center lg:container">
     <div
       v-for="portfolio in filterPortfolioData"
       :key="portfolio.id"
@@ -138,6 +143,7 @@
         </Button>
       </div>
     </div>
+  </div>
   </div>
 </template>
 <script>

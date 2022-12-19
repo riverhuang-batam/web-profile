@@ -1,9 +1,10 @@
 <template>
+<div>
   <h1 class="font-bold text-3xl text-center">About Me</h1>
   <div
-    class="container px-6 py-8 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4"
+    class="lg:container px-6 py-8 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4"
   >
-    <div class="">
+    <div class="flex justify-center ">
       <img src="images/image1.png" alt="" srcset="" />
     </div>
     <div class="">
@@ -22,30 +23,30 @@
             <CIcon :icon="icon.cibGmail" class="w-6" />
           </span>
           <span class="inline-block ml-4 ">
-            <p class="text-xl whitespace-nowrap body-font font-sans">E-mail</p>
+            <p class="text-base md:text-xl whitespace-nowrap body-font font-sans">E-mail</p>
           </span>
         </div>
-        <div>
-          <p class="text-xl text-center ">:</p>
+        <div class="col-start-4 sm:col-start-2">
+          <p class="text-base md:text-xl text-center ">:</p>
         </div>
-        <div>
-          <p class="text-xl body-font font-sans">riverhuang011@gmail.com</p>
+        <div class="col-end-6 sm:col-start-3">
+          <p class="text-base md:text-xl body-font font-sans">riverhuang011@gmail.com</p>
         </div>
       </div>
       <div class="grid grid-cols-8 divide-x-2 mt-4">
         <div class="flex align-middle">
-          <span class="inline-block">
+          <span class="inline-block col-start-1">
             <CIcon :icon="icon.cilPhone" class="w-6" />
           </span>
           <span class="inline-block ml-4">
-            <p class="text-xl body-font font-sans">Phone</p>
+            <p class="text-base md:text-xl col-start-2 body-font font-sans">Phone</p>
           </span>
         </div>
-        <div>
-          <p class="text-xl text-center">:</p>
+        <div class="col-start-4 sm:col-start-2">
+          <p class="text-base md:text-xl text-center">:</p>
         </div>
-        <div>
-          <p class="text-xl whitespace-nowrap body-font font-sans">0896-1815-5369</p>
+        <div class="col-end-6 sm:col-start-3">
+          <p class="text-base md:text-xl whitespace-nowrap body-font font-sans">0896-1815-5369</p>
         </div>
       </div>
 
@@ -55,14 +56,14 @@
             <CIcon :icon="icon.cibGithub" class="w-6" />
           </span>
           <span class="inline-block ml-4">
-            <p class="text-xl body-font font-sans">Github</p>
+            <p class="text-base md:text-xl body-font font-sans">Github</p>
           </span>
         </div>
-        <div>
-          <p class="text-xl text-center">:</p>
+        <div class="col-start-4 sm:col-start-2">
+          <p class="text-base md:text-xl text-center">:</p>
         </div>
-        <div>
-          <p class="text-xl whitespace-nowrap body-font font-sans">riverhuang-batam</p>
+        <div class="col-end-6 sm:col-start-3">
+          <p class="text-base md:text-xl whitespace-nowrap body-font font-sans">riverhuang-batam</p>
         </div>
       </div>
       <div class="grid grid-cols-8 divide-x-2 mt-4">
@@ -71,37 +72,38 @@
             <CIcon :icon="icon.cibLinkedin" class="w-6" />
           </span>
           <span class="inline-block ml-4">
-            <p class="text-xl whitespace-nowrap body-font font-sans">Linkedin</p>
+            <p class="text-base md:text-xl whitespace-nowrap body-font font-sans">Linkedin</p>
           </span>
         </div>
-        <div >
-          <p class="text-xl text-center">:</p>
+        <div class="col-start-4 sm:col-start-2">
+          <p class="text-base md:text-xl text-center">:</p>
         </div>
-        <div class="whitespace-nowrap">
-          <p class="text-xl body-font font-sans">River Huang</p>
+        <div class="col-end-6 sm:col-start-3">
+          <p class="text-base md:text-xl whitespace-nowrap body-font font-sans">River Huang</p>
         </div>
       </div>
 
       <p class="text-2xl mt-4">Hobbies</p>
       <div class="grid grid-cols-4 divide-x-2 mt-2">
-        <div>
+        <div class="whitespace-nowrap">
           <span class="inline-block">
-            <CIcon :icon="icon.cilGamepad" class="w-6" />
+            <CIcon :icon="icon.cilGamepad" class="w-6 " />
           </span>
           <span class="inline-block">
-            <p class="ml-2 text-xl body-font font-sans">Play Games</p>
+            <p class="ml-2 text-base md:text-xl whitespace-nowrap body-font font-sans">Play Games</p>
           </span>
         </div>
-        <div>
+        <div class="whitespace-nowrap md:col-start-3 lg:col-start-2">
           <span class="inline-block">
             <CIcon :icon="icon.cilMusicNote" class="w-6" />
           </span>
           <span class="inline-block">
-            <p class="ml-2 text-xl body-font font-sans">Listen Music</p>
+            <p class="ml-2 text-base md:text-xl whitespace-nowrap body-font font-sans">Listen Music</p>
           </span>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
 <script>

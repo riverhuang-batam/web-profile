@@ -5,7 +5,7 @@
       <div class="lg:col-start-2 lg:col-end-7 flex justify-center">
         <img src="images/image2.png" alt="" srcset="" />
       </div>
-      <div class="lg:col-end-7 lg:col-start-11 mt-10 ">
+      <div class=" lg:col-end-7  xl:col-start-11    mt-10 ">
         <form @submit.prevent="sendEmail">
           <div class="mb-6">
             <label for="username" class="block mb-2 text-sm font-medium body-font font-sans">Your name</label>

@@ -4,7 +4,7 @@ const ExperienceList = [
         title: "Impact Byte",
         logo: "logo/impactbytelogo.png",
         description:
-          "Learn Front End Javascript from Impact Byte, learning HTML, Css, Javascript, React also create a weather app for the project.",
+          "Learn Front End Javascript from Impact Byte, learning HTML, CSS, Javascript, React also create a weather app for the project.",
         skills: [
           "HTML",
           "CSS",
@@ -21,7 +21,7 @@ const ExperienceList = [
         title: "Bootcamp Impact Byte",
         logo: "logo/impactbytelogo.png",
         description:
-          "Learn to become Full stack Developer. for front-end learned Html, CSs, javascript, React, React Native and Redux. for Back End learned nodejs, express, mongodb, sql.",
+          "Learn to become Full stack Developer. for front-end learned HTML, CSS, javascript, React, React Native and Redux. for Back End learned nodejs, express, mongodb, sql.",
         skills: [
           "HTML",
           "CSS",

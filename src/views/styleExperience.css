@@ -111,7 +111,7 @@ body {
   height: 125px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 380px) {
   
   .swiper-logo{
     width: 100%;
@@ -120,22 +120,48 @@ body {
     margin-right: auto;
   }
   .swiper-pagination-image{
-    width: 75px;
-    height: 75px;
+    width: 95px;
+    height: 95px;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
   
   .swiper-logo{
-    width: 100%;
+    width: 60%;
     height: 50%;
     margin-left: auto;
     margin-right: auto;
   }
   .swiper-pagination-image{
-    width: 75px;
-    height: 75px;
+    width: 95px;
+    height: 95px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  
+  .swiper-logo{
+    width: 60%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-pagination-image{
+    width: 95px;
+    height: 95px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  
+  .swiper-logo{
+    width: 40%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-pagination-image{
+    width: 115px;
+    height: 115px;
   }
 }
 

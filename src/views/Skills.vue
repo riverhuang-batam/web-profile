@@ -1,5 +1,5 @@
 <template>
-  <h1 class="font-bold text-3xl text-center">Skills</h1>
+  <h1 class="font-bold text-3xl text-center mt-12">Skills</h1>
   <!-- <span
   v-for="skill in SkillList"
     :key="skill.id"
