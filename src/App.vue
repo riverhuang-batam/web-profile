@@ -1,15 +1,16 @@
 <template>
+<div>
 <div class="bg-bgprimary mb-12 h-3/5 md:h-3/5 sm:h-full">
   <Navbar />
   <Header />
   </div>
   <Experience />
+  </div>
   <Skills/>
   <Portfolio/>
   <AboutMe/>
   
   <Footer />
-  
   
 </template>
 <script>

@@ -32,11 +32,11 @@
     :modules="modules"
   >
     <swiper-slide v-for="experience in ExperienceList" :key="experience.id">
-      <div class="grid grid-cols-10 sm:grid-cols-10 gap-4 mt-4">
-        <div class=" col-start-1 col-end-4">
-          <img :src="experience.logo" width="310" size="" alt="" srcset="" />
+      <div class="grid grid-cols-1 lg:grid-cols-10 lg:grid-cols-10 gap-4 mt-4">
+        <div class="flex justify-center lg:col-start-1 lg:col-end-4 ">
+          <img :src="experience.logo" class="max-w-[310px]"/>
         </div>
-<div class="col-end-4 col-start-11">
+<div class="lg:col-end-4 lg:col-start-11">
         <div class="text-left mt-148">
           <h1 class="font-bold text-4xl mt-4 mb-4">
             {{ experience.title }} {{ experience.id }}
@@ -66,6 +66,7 @@
     > -->
   </swiper>
   </div>
+  <div class="mt-8">
   <swiper
     class="swiper-logo"
     :loop="true"
@@ -85,6 +86,7 @@
       <!-- {{ experience.title }} -->
       <img
         class="swiper-pagination-image"
+        width="610"
         :src="experience.logo"
       />
     </swiper-slide>
@@ -96,6 +98,7 @@
     ><swiper-slide>Slide 7</swiper-slide> <swiper-slide>Slide 8</swiper-slide
     > -->
   </swiper>
+  </div>
   <span class="swiper-slide-next"></span>
   <modal title="This is a long modal!">
     <div style="margin: 32em 0">
@@ -106,7 +109,6 @@
         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
       </p>
     </div>
   </modal>
