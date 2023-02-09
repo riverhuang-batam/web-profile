@@ -68,7 +68,7 @@
 
       <div class="flex justify-end">
         <Button class="bg-primary hover:bg-blue-400 text-white mt-4">
-          <p class="text-2xl">Open Website</p>
+          <a :href="portfolioModalValue.website" target="_blank" class="text-2xl">Open Website</a>
         </Button>
       </div>
     </Modal>

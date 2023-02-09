@@ -62,7 +62,7 @@ const PortfolioList = [
         thumbnail: "PortfolioImages/covidTracker.png",
         year: 2020,
         tags: ["ReactJS"],
-        website: "PortfolioImages/covidTraker.png",
+        website: "https://covidtrackers19.netlify.app",
         previews: [
           "PortfolioImages/covidTraker.png",
         ],
@@ -80,7 +80,7 @@ const PortfolioList = [
         thumbnail: "PortfolioImages/react_chat_application.png",
         year: 2021,
         tags: ["React"],
-        website: "PortfolioImages/react_chat_application.png",
+        website: "https://react-chat-application123.netlify.app",
         previews: [
           "PortfolioImages/react_chat_application.png",
         ],
@@ -99,7 +99,7 @@ const PortfolioList = [
         thumbnail: "PortfolioImages/todo_vuex.png",
         year: 2021,
         tags: ["VueJS", "Javascript", "Vuex"],
-        website: "PortfolioImages/todo_vuex.png",
+        website: "https://todosvuex.netlify.app",
         previews: [
           "PortfolioImages/todo_vuex.png",
         ],
